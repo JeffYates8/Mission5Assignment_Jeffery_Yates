@@ -1,3 +1,7 @@
 ﻿@{
     Layout = "_Layout";
 }
+
+<!-- When a user requests a view (e.g., Index.cshtml), ASP.NET Core automatically runs the _ViewStart.cshtml file before rendering the view.
+The Layout = "~/Views/Shared/_Layout.cshtml"; line ensures that the view uses the shared layout.
+The content of the view is injected into the RenderBody() section of the layout.-->

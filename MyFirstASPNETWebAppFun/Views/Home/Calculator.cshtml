@@ -1,9 +1,11 @@
 ﻿@{
-    ViewData["Title"] = "Tutoring Calculator";
+    ViewData["Title"] = "Tutoring Calculator"; // adds the following to the HTML title
 }
 
 <h2>Calculate Your Tutoring Cost</h2>
 
+
+<!-- this form gathers user input for hours, displays (no editting) the hourly rate (expensive of course) and has a button for the user to calc the total-->
 <form id="golf-calculator" class="mb-4">
     <div class="mb-3">
         <label for="hours" class="form-label">Enter the number of hours you need:</label>
@@ -28,5 +30,6 @@
 
 <a href="/" class="btn btn-secondary">Back to Home</a>
 
+<!--Calls in the needed jquery and gives the path for the .js file -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="~/js/calculator.js"></script>

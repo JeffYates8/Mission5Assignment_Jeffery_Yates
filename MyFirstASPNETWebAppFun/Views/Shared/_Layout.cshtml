@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Try Golf! - @ViewData["Title"]</title>
+    <title>Try Golf! - @ViewData["Title"]</title> <!-- Gives begining of title and the rest will be added by the base document-->
     <link rel="shortcut icon" href="~/images/BYUgolfball.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">  <!-- pulls in our online bootstrap css (real snazzy stuff)-->
 </head>
 <body>
     <header class="bg-dark text-white text-center p-3">
-        <h1>Golf is Awesome for Everyone</h1>
+        <h1>Golf is Awesome for Everyone</h1> <!-- Hopefull message to suck them in to what will be a miserable experience due to frustration-->
         <nav>
             <a href="/" class="text-white me-3">Home</a>
-            <a href="/Home/Calculator" class="text-white">Golf Calculator</a>
+            <a href="/Home/Calculator" class="text-white">Golf Calculator</a> <!-- these navigation buttons take you to the 2 pages on the web app.-->
         </nav>
     </header>
 
     <div class="container mt-5">
-        @RenderBody()
+        @RenderBody() <!-- this pulls in the body html elements from the base page calling this layout file-->
     </div>
 
-    <footer class="bg-light text-center p-3 mt-5">
+    <footer class="bg-light text-center p-3 mt-5"> <!-- our beautiful footer with a 100% authentic United States Governance of Trademark Association copyright (plz don't sue)-->
         <p>Copyright © 2025 - Built by Jeffery Yates</p>
     </footer>
 </body>
