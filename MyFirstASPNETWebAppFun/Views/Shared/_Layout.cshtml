@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Golf! - @ViewData["Title"]</title>
+    <link rel="shortcut icon" href="~/images/BYUgolfball.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center p-3">
+        <h1>Golf is Awesome for Everyone</h1>
+        <nav>
+            <a href="/" class="text-white me-3">Home</a>
+            <a href="/Home/Calculator" class="text-white">Golf Calculator</a>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        @RenderBody()
+    </div>
+
+    <footer class="bg-light text-center p-3 mt-5">
+        <p>Copyright © 2025 - Built by Jeffery Yates</p>
+    </footer>
+</body>
+</html>

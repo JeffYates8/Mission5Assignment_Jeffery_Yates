@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Tutoring Calculator";
+}
+
+<h2>Calculate Your Tutoring Cost</h2>
+
+<form id="golf-calculator" class="mb-4">
+    <div class="mb-3">
+        <label for="hours" class="form-label">Enter the number of hours you need:</label>
+        <input type="number" id="hours" class="form-control" min="1" required>
+        <div class="invalid-feedback">Please enter a positive number of hours.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="rate" class="form-label">Hourly Rate:</label>
+        <input type="text" id="rate" class="form-control" value="$2938.78" readonly>
+    </div>
+
+    <div class="mb-3">
+        <button type="button" id="calculate-button" class="btn btn-primary">Calculate Total</button>
+    </div>
+
+    <div class="mb-3">
+        <label for="total" class="form-label">Total Cost: </label>
+        <input type="text" id="total" class="form-control" readonly>
+    </div>
+</form>
+
+<a href="/" class="btn btn-secondary">Back to Home</a>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/calculator.js"></script>
